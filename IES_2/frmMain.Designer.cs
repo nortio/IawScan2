@@ -37,9 +37,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TabPage tabPage0;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnCheckAll;
-        private System.Windows.Forms.Button btnUncheckAll;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
@@ -66,7 +63,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.CheckedListBox cblTraces;
-        private ZedGraph.ZedGraphControl zedGraphControl1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.CheckBox cbLOG;
         private System.Windows.Forms.Button btnGraph;
@@ -83,7 +79,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn parValue;
         private System.Windows.Forms.DataGridViewTextBoxColumn parUnit;
         private System.Windows.Forms.TextBox tbHelp;
-        private System.Windows.Forms.CheckBox cbQueryErrors;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
@@ -144,10 +139,11 @@
             this.parName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.parValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.parUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.cbQueryErrors = new System.Windows.Forms.CheckBox();
-            this.btnUncheckAll = new System.Windows.Forms.Button();
-            this.btnCheckAll = new System.Windows.Forms.Button();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.cbQueryErrors = new System.Windows.Forms.ToolStripButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvErrors = new System.Windows.Forms.DataGridView();
@@ -206,7 +202,7 @@
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvParameters)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvErrors)).BeginInit();
@@ -454,8 +450,8 @@
             // tableLayoutPanel2
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.dgvParameters, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel4, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.dgvParameters, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.toolStrip1, 0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // dgvParameters
@@ -463,6 +459,8 @@
             this.dgvParameters.AllowUserToAddRows = false;
             this.dgvParameters.AllowUserToDeleteRows = false;
             this.dgvParameters.AllowUserToResizeRows = false;
+            this.dgvParameters.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvParameters.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvParameters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvParameters.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.parChecked,
@@ -506,37 +504,49 @@
             this.parUnit.ReadOnly = true;
             this.parUnit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // panel4
+            // toolStrip1
             // 
-            this.panel4.Controls.Add(this.cbQueryErrors);
-            this.panel4.Controls.Add(this.btnUncheckAll);
-            this.panel4.Controls.Add(this.btnCheckAll);
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
+            this.toolStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton2,
+            this.toolStripButton3,
+            this.toolStripSeparator1,
+            this.cbQueryErrors});
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = global::IES_2.Properties.Resources.ic_fluent_select_all_on_24_filled;
+            resources.ApplyResources(this.toolStripButton2, "toolStripButton2");
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Click += new System.EventHandler(this.btnCheckAll_Click);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = global::IES_2.Properties.Resources.ic_fluent_select_all_off_24_filled;
+            resources.ApplyResources(this.toolStripButton3, "toolStripButton3");
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Click += new System.EventHandler(this.btnUncheckAll_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // cbQueryErrors
             // 
+            this.cbQueryErrors.Checked = true;
+            this.cbQueryErrors.CheckOnClick = true;
+            this.cbQueryErrors.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbQueryErrors.Image = global::IES_2.Properties.Resources.ic_fluent_search_info_24_filled;
             resources.ApplyResources(this.cbQueryErrors, "cbQueryErrors");
             this.cbQueryErrors.Name = "cbQueryErrors";
-            this.toolTip1.SetToolTip(this.cbQueryErrors, resources.GetString("cbQueryErrors.ToolTip"));
-            this.cbQueryErrors.UseVisualStyleBackColor = true;
             this.cbQueryErrors.CheckedChanged += new System.EventHandler(this.cbQueryErrors_CheckedChanged);
-            // 
-            // btnUncheckAll
-            // 
-            resources.ApplyResources(this.btnUncheckAll, "btnUncheckAll");
-            this.btnUncheckAll.Name = "btnUncheckAll";
-            this.toolTip1.SetToolTip(this.btnUncheckAll, resources.GetString("btnUncheckAll.ToolTip"));
-            this.btnUncheckAll.UseVisualStyleBackColor = true;
-            this.btnUncheckAll.Click += new System.EventHandler(this.btnUncheckAll_Click);
-            // 
-            // btnCheckAll
-            // 
-            resources.ApplyResources(this.btnCheckAll, "btnCheckAll");
-            this.btnCheckAll.Name = "btnCheckAll";
-            this.toolTip1.SetToolTip(this.btnCheckAll, resources.GetString("btnCheckAll.ToolTip"));
-            this.btnCheckAll.UseVisualStyleBackColor = true;
-            this.btnCheckAll.Click += new System.EventHandler(this.btnCheckAll_Click);
             // 
             // tabPage2
             // 
@@ -557,6 +567,8 @@
             this.dgvErrors.AllowUserToAddRows = false;
             this.dgvErrors.AllowUserToDeleteRows = false;
             this.dgvErrors.AllowUserToResizeRows = false;
+            this.dgvErrors.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvErrors.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvErrors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvErrors.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.errDescr,
@@ -642,6 +654,8 @@
             this.dgvTests.AllowUserToAddRows = false;
             this.dgvTests.AllowUserToDeleteRows = false;
             this.dgvTests.AllowUserToResizeRows = false;
+            this.dgvTests.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvTests.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvTests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTests.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -773,6 +787,8 @@
             this.dgvAdjusts.AllowUserToAddRows = false;
             this.dgvAdjusts.AllowUserToDeleteRows = false;
             this.dgvAdjusts.AllowUserToResizeRows = false;
+            this.dgvAdjusts.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvAdjusts.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvAdjusts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAdjusts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3,
@@ -834,6 +850,7 @@
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::IES_2.Properties.Resources.ic_fluent_info_24_filled;
             resources.ApplyResources(this.toolStripButton1, "toolStripButton1");
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.btnAbout_Click);
@@ -917,9 +934,10 @@
             this.groupBox3.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvParameters)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvErrors)).EndInit();
@@ -946,10 +964,15 @@
 
         }
 
+
+
         #endregion
-
-        
-
+        private ZedGraph.ZedGraphControl zedGraphControl1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton cbQueryErrors;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 

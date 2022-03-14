@@ -112,12 +112,12 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 16</value>
   </data>
@@ -152,13 +152,13 @@
     <value>163, 24</value>
   </data>
   <data name="cbCompat.Text" xml:space="preserve">
-    <value>Mod. compatibile</value>
+    <value>Mod. compatibilità</value>
   </data>
   <data name="cbLOG.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 24</value>
   </data>
   <data name="cbLOG.Text" xml:space="preserve">
-    <value>LOG abilitato</value>
+    <value>Abilita salvataggio dei log</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Seleziona COM</value>
@@ -280,23 +280,6 @@
   </data>
   <data name="tabPage4.Text" xml:space="preserve">
     <value>[F5] Grafici</value>
-  </data>
-  <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJsSURBVDhPdZNfSJNRGMbfDbVJOIKv3O4qJt45vAlGUYOu
-        usshRHTVVV0u6GLeZTdBRhd5k8i0/3+oFZYZySiozIuJMadua9MlW9FGulDcZq719L7vV6CVBw6c73l+
-        z3vOd/4Q/ducLHVR444wNbemtctYNCLxtmwWdgLU4i3tORXE8f73OBuKa5exaOIpQyTspmahuobrjUe7
-        cfL2NHrfZM3+NouLrxZwibt8iyeMsH8XCdR3nMeJOzPwD6fgf5aGf2QOZ57PIZ5fxUR22dTYE0bY3yvR
-        VTip1Vty90bguz8L34M4fKEEfI+SODb0AUuVKrIra6YmHjPCSubPnnRZTwexbzAKz61peO7OwMOQh2HP
-        wwS8j5M4xMVUE48ZYSVjbmyTEd7WMw7XQBSuGzG4eIkuhg8/TeFy5DOGkovwjc6zFjc9YZiVjGSJdrvT
-        dVciMAanYHB1g8MGz2zwzLFiBeu1n9g7nIbBv6CeMMxKRrJagK5OwsaVbQzYeLm2Jyns4k38/qOG10tl
-        2HgDRVNPmJsxSMYs0LQzTFyR7s3CyrNaGbaOZtA5+QXSAvNFWF9+VE09ZoSla5yRrG7EhRBIDD42Ypj4
-        /IOfVrRAW6wAGsuqpp4wwkrGvJ18jAf5SEbSDCzAMp6DhWfPlddRWKuiI5pHc/yrauIRXyplJbPhagfo
-        XB/q3+Vg54Cdd36Cw5lqDUcKq7Bnvqlmn8orQ919my6SrMJCDXw9ewbgSCyiLbcMNwfdxTL3io5Fc3AR
-        YZT973uQh+LtLG1/MYYWDrbzb7SXqzoWTbytHtPGl2U+Z4czTPsPpLXLeIvn/AtrFu0ukqKEkAAAAABJ
-        RU5ErkJggg==
-</value>
   </data>
   <data name="toolStripButton1.ToolTipText" xml:space="preserve">
     <value>Informazioni su IAW-Scan 2...</value>

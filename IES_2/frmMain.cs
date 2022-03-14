@@ -50,7 +50,6 @@ namespace IES_2
         public frmMain()
         {
             InitializeComponent();
-            //t.Abort();
 
             FrmOneByte = new frmOneByte
             {
