@@ -46,16 +46,9 @@ namespace IES_2
         [DllImport("winmm.dll", EntryPoint = "timeEndPeriod", SetLastError = true)]
         private static extern uint TimeEndPeriod(uint uMilliseconds);
 
-        public void SplashScreen()
-        {
-            Application.Run(new SplashScreen());
-        }
 
         public frmMain()
         {
-            Thread t = new Thread(new ThreadStart(SplashScreen));
-            t.Start();
-            Thread.Sleep(1000);
             InitializeComponent();
             //t.Abort();
 
