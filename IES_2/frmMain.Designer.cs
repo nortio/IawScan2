@@ -230,7 +230,6 @@
             // 
             // panel2
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label24);
             this.panel2.Controls.Add(this.lblIsoCode);
             this.panel2.Controls.Add(this.lblCarModel);

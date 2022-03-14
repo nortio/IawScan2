@@ -101,19 +101,19 @@
     <value>True</value>
   </data>
   <data name="lblIsoCode.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+    <value>Segoe UI, 9.75pt, style=Bold</value>
   </data>
   <data name="lblIsoCode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblIsoCode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 47</value>
+    <value>119, 47</value>
   </data>
   <data name="lblIsoCode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="lblIsoCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 16</value>
+    <value>17, 17</value>
   </data>
   <data name="lblIsoCode.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -137,19 +137,19 @@
     <value>True</value>
   </data>
   <data name="lblCarModel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+    <value>Segoe UI, 9.75pt, style=Bold</value>
   </data>
   <data name="lblCarModel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblCarModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>392, 47</value>
+    <value>380, 47</value>
   </data>
   <data name="lblCarModel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="lblCarModel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 16</value>
+    <value>17, 17</value>
   </data>
   <data name="lblCarModel.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -245,19 +245,19 @@
     <value>True</value>
   </data>
   <data name="lblEcuType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+    <value>Segoe UI, 9.75pt, style=Bold</value>
   </data>
   <data name="lblEcuType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblEcuType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>392, 10</value>
+    <value>380, 10</value>
   </data>
   <data name="lblEcuType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="lblEcuType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 16</value>
+    <value>17, 17</value>
   </data>
   <data name="lblEcuType.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -317,19 +317,19 @@
     <value>True</value>
   </data>
   <data name="lblRepCode.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+    <value>Segoe UI, 9.75pt, style=Bold</value>
   </data>
   <data name="lblRepCode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblRepCode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 10</value>
+    <value>119, 10</value>
   </data>
   <data name="lblRepCode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="lblRepCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 16</value>
+    <value>17, 17</value>
   </data>
   <data name="lblRepCode.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -356,7 +356,7 @@
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
   <data name="btnConnect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>750, 10</value>
+    <value>752, 11</value>
   </data>
   <data name="btnConnect.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
