@@ -1,5 +1,5 @@
-﻿using System.IO.Ports;
-using IES_2.Res;
+﻿using IES_2.Res;
+using System.IO.Ports;
 
 namespace IES_2.ECU
 {
@@ -8,7 +8,7 @@ namespace IES_2.ECU
         public const string name = "IAW-8F.68";
         public const string longName = "Magneti-Marelli IAW-8F.68 MPI (Alfa 33)";
         public static string[,] cars = new string[,] {
-			  {"55B683079126", "ALFA 33 1360 MPI CM"}};
+              {"55B683079126", "ALFA 33 1360 MPI CM"}};
         public static string GetCars()
         {
             string result = "";
@@ -94,29 +94,29 @@ namespace IES_2.ECU
             immoErrReq = new byte[] { };
             clearCodes = new testElement("", false, 10, new byte[] { 0x84 });
             engineErrors = new errorElement[] {
-                new errorElement( lang.ErrTPS, 0x10, 0, 0x14, 0, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrMAP, 0x10, 0, 0x14, 1, 0, 0, 0, 1, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrLambda, 0x10, 0, 0x14, 2, 0, 0, 0, 2, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrECT, 0x10, 0, 0x14, 3, 0, 0, 0, 3, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrIAT, 0x10, 0, 0x14, 4, 0, 0, 0, 4, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrBattV, 0x10, 0, 0x14, 5, 0, 0, 0, 5, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrIdleReg, 0x10, 0, 0x14, 6, 0, 0, 0, 6, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrI8, 0x10, 0, 0x14, 7, 0, 0, 0, 7, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrInj, 0x11, 0, 0x15, 0, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrCoil1, 0x11, 0, 0x15, 1, 0, 0, 0, 1, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrCoil2, 0x11, 0, 0x15, 2, 0, 0, 0, 2, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrIAV, 0x11, 0, 0x15, 3, 0, 0, 0, 3, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrEVAP, 0x11, 0, 0x15, 4, 0, 0, 0, 4, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrAirCo, 0x11, 0, 0x15, 5, 0, 0, 0, 5, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrFuelPump, 0x11, 0, 0x15, 6, 0, 0, 0, 6, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrGenRel, 0x11, 0, 0x15, 7, 0, 0, 0, 7, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrACParam, 0x12, 0, 0x16, 0, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrRAM, 0x12, 0, 0x16, 1, 0, 0, 0, 1, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrROM, 0x12, 0, 0x16, 2, 0, 0, 0, 2, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrEEPROM, 0x12, 0, 0x16, 3, 0, 0, 0, 3, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrCPU, 0x12, 0, 0x16, 4, 0, 0, 0, 4, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrRPMSens, 0x12, 0, 0x16, 5, 0, 0, 0, 5, "", "", new errorElement.ErrDecode(err8F_68)), 
-                new errorElement( lang.ErrF7, 0x12, 0, 0x16, 6, 0, 0, 0, 6, "", "", new errorElement.ErrDecode(err8F_68)), 
+                new errorElement( lang.ErrTPS, 0x10, 0, 0x14, 0, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrMAP, 0x10, 0, 0x14, 1, 0, 0, 0, 1, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrLambda, 0x10, 0, 0x14, 2, 0, 0, 0, 2, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrECT, 0x10, 0, 0x14, 3, 0, 0, 0, 3, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrIAT, 0x10, 0, 0x14, 4, 0, 0, 0, 4, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrBattV, 0x10, 0, 0x14, 5, 0, 0, 0, 5, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrIdleReg, 0x10, 0, 0x14, 6, 0, 0, 0, 6, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrI8, 0x10, 0, 0x14, 7, 0, 0, 0, 7, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrInj, 0x11, 0, 0x15, 0, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrCoil1, 0x11, 0, 0x15, 1, 0, 0, 0, 1, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrCoil2, 0x11, 0, 0x15, 2, 0, 0, 0, 2, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrIAV, 0x11, 0, 0x15, 3, 0, 0, 0, 3, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrEVAP, 0x11, 0, 0x15, 4, 0, 0, 0, 4, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrAirCo, 0x11, 0, 0x15, 5, 0, 0, 0, 5, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrFuelPump, 0x11, 0, 0x15, 6, 0, 0, 0, 6, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrGenRel, 0x11, 0, 0x15, 7, 0, 0, 0, 7, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrACParam, 0x12, 0, 0x16, 0, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrRAM, 0x12, 0, 0x16, 1, 0, 0, 0, 1, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrROM, 0x12, 0, 0x16, 2, 0, 0, 0, 2, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrEEPROM, 0x12, 0, 0x16, 3, 0, 0, 0, 3, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrCPU, 0x12, 0, 0x16, 4, 0, 0, 0, 4, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrRPMSens, 0x12, 0, 0x16, 5, 0, 0, 0, 5, "", "", new errorElement.ErrDecode(err8F_68)),
+                new errorElement( lang.ErrF7, 0x12, 0, 0x16, 6, 0, 0, 0, 6, "", "", new errorElement.ErrDecode(err8F_68)),
                 new errorElement( lang.ErrF8, 0x12, 0, 0x16, 7, 0, 0, 0, 7, "", "", new errorElement.ErrDecode(err8F_68))
             };
             immoErrors = new errorElement[] { };

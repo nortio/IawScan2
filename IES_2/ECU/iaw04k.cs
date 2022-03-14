@@ -1,6 +1,6 @@
-﻿using System.IO.Ports;
+﻿using IES_2.Res;
+using System.IO.Ports;
 using System.Threading;
-using IES_2.Res;
 
 /*
  * Barnacle's
@@ -172,7 +172,7 @@ namespace IES_2.ECU
                 new dataElement(lang.StaThrMM, "", lang.yes_no, new byte[] { 0x15 }, new dataElement.ValDecode(UR4)),
                 new dataElement(lang.StaABSON, "", lang.yes_no, new byte[] { 0x15 }, new dataElement.ValDecode(UR5)),
                 new dataElement(lang.StaAirCoON, "", lang.yes_no, new byte[] { 0x15 }, new dataElement.ValDecode(UR6)),
-                new dataElement(lang.StaGearEng, "", lang.yes_no, new byte[] { 0x15 }, new dataElement.ValDecode(UR7)), 
+                new dataElement(lang.StaGearEng, "", lang.yes_no, new byte[] { 0x15 }, new dataElement.ValDecode(UR7)),
                 new dataElement(lang.StaVAESC, "", lang.yes_no, new byte[] { 0x15 }, new dataElement.ValDecode(UR8))};
             activeTest = new testElement[] {
                 new testElement( lang.FuelPump, false, 30, new byte[] { 0x80 }),
@@ -192,21 +192,21 @@ namespace IES_2.ECU
             immoErrReq = new byte[] { };
             clearCodes = new testElement("", false, 10, new byte[] { 0x86 });
             engineErrors = new errorElement[] {
-                new errorElement( lang.ErrVAE, 0x0F, 0x16, 0x1D, 0, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)), 
+                new errorElement( lang.ErrVAE, 0x0F, 0x16, 0x1D, 0, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)),
                 new errorElement( lang.ErrMixRatio, 0x0F, 0x16, 0x1D, 1, 0x11, 0x18, 0x1F, 0, lang.MaxRICH, lang.MaxLEAN, new errorElement.ErrDecode(err04K)),
                 new errorElement( lang.ErrIAT, 0x0F, 0x16, 0x1D, 2, 0x11, 0x18, 0x1F, 1, lang.OpenCircuit, lang.ShortToVcc, new errorElement.ErrDecode(err04K)),
                 new errorElement( lang.ErrKnock, 0x0F, 0x16, 0x1D, 3, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)),
                 new errorElement( lang.ErrECT, 0x0F, 0x16, 0x1D, 4, 0x11, 0x18, 0x1F, 2, lang.OpenCircuit, lang.ShortToVcc, new errorElement.ErrDecode(err04K)),
                 new errorElement( lang.ErrLambda, 0x0F, 0x16, 0x1D, 5, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)),
                 new errorElement( lang.ErrMAP, 0x0F, 0x16, 0x1D, 6, 0x11, 0x18, 0x1F, 7, lang.OpenCircuit, lang.ShortToVcc, new errorElement.ErrDecode(err04K)),
-                new errorElement( lang.ErrTPS, 0x0F, 0x16, 0x1D, 7, 0x11, 0x18, 0x1F, 3, lang.OpenCircuit, lang.ShortToVcc, new errorElement.ErrDecode(err04K)),                
-                new errorElement( lang.ErrCam, 0x10, 0x17, 0x1E, 0, 0x11, 0x18, 0x1F, 6, lang.OpenCircuit, lang.ShortToVcc, new errorElement.ErrDecode(err04K)), 
-                new errorElement( lang.ErrSPS, 0x10, 0x17, 0x1E, 1, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)), 
-                new errorElement( lang.ErrEPROM, 0x10, 0x17, 0x1E, 2, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)), 
-                new errorElement( lang.ErrEEPROM, 0x10, 0x17, 0x1E, 3, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)), 
-                new errorElement( lang.ErrNeutralGear, 0x10, 0x17, 0x1E, 4, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)), 
-                new errorElement( lang.ErrDigimatic, 0x10, 0x17, 0x1E, 5, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)), 
-                new errorElement( lang.ErrRAM, 0x10, 0x17, 0x1E, 6, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)), 
+                new errorElement( lang.ErrTPS, 0x0F, 0x16, 0x1D, 7, 0x11, 0x18, 0x1F, 3, lang.OpenCircuit, lang.ShortToVcc, new errorElement.ErrDecode(err04K)),
+                new errorElement( lang.ErrCam, 0x10, 0x17, 0x1E, 0, 0x11, 0x18, 0x1F, 6, lang.OpenCircuit, lang.ShortToVcc, new errorElement.ErrDecode(err04K)),
+                new errorElement( lang.ErrSPS, 0x10, 0x17, 0x1E, 1, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)),
+                new errorElement( lang.ErrEPROM, 0x10, 0x17, 0x1E, 2, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)),
+                new errorElement( lang.ErrEEPROM, 0x10, 0x17, 0x1E, 3, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)),
+                new errorElement( lang.ErrNeutralGear, 0x10, 0x17, 0x1E, 4, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)),
+                new errorElement( lang.ErrDigimatic, 0x10, 0x17, 0x1E, 5, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)),
+                new errorElement( lang.ErrRAM, 0x10, 0x17, 0x1E, 6, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err04K)),
                 new errorElement( lang.ErrSMOT, 0x10, 0x17, 0x1E, 7, 0x11, 0x18, 0x1F, 5, lang.OpenCircuit, lang.ShortToVcc, new errorElement.ErrDecode(err04K))
             };
             immoErrors = new errorElement[] { };

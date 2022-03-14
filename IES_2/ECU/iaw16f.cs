@@ -1,5 +1,5 @@
-﻿using System.IO.Ports;
-using IES_2.Res;
+﻿using IES_2.Res;
+using System.IO.Ports;
 
 namespace IES_2.ECU
 {
@@ -106,7 +106,7 @@ namespace IES_2.ECU
                 new testElement( lang.REVmeter, false, 2, new byte[] { 0x86 }),
                 new testElement( lang.ACrelay, false, 30, new byte[] { 0x87 }),
                 new testElement( lang.GenericRelay, false, 30, new byte[] { 0x88 })};
-                //new testElement( lang.Stepper, true, 30, new byte[] { 0x8E })};
+            //new testElement( lang.Stepper, true, 30, new byte[] { 0x8E })};
             adjustments = new adjustElement[] {
                 new adjustElement( lang.ToggleTrimAC, 0x00, 0x00, new byte[] { 0x89 }, null, "toggle"),
                 new adjustElement( lang.ToggleStepAC, 0x00, 0x00, new byte[] { 0x91 }, null, "toggle"),
@@ -118,39 +118,39 @@ namespace IES_2.ECU
             immoErrReq = new byte[] { 0x71, 0x72 };
             clearCodes = new testElement("", false, 10, new byte[] { 0x84 });
             engineErrors = new errorElement[] {
-                new errorElement( lang.ErrTPS, 0x10, 0, 0x14, 0, 0x2B, 0, 0x2E, 0, lang.ShortToGND, lang.ShortToVcc, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrMAP, 0x10, 0, 0x14, 1, 0x2B, 0, 0x2E, 1, lang.ShortToVcc, lang.ShortToGND, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrLambda, 0x10, 0, 0x14, 2, 0x2B, 0, 0x2E, 2, "", "", new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrECT, 0x10, 0, 0x14, 3, 0x2B, 0, 0x2E, 3, lang.ShortToGND, lang.ShortToVcc, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrIAT, 0x10, 0, 0x14, 4, 0x2B, 0, 0x2E, 4, lang.ShortToGND, lang.ShortToVcc, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrBattV, 0x10, 0, 0x14, 5, 0x2B, 0, 0x2E, 5, lang.AtMAX, lang.AtMIN, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrIdleReg, 0x10, 0, 0x14, 6, 0x2B, 0, 0x2E, 6, "", "", new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrI8, 0x10, 0, 0x14, 7, 0x2B, 0, 0x2E, 7, "", "", new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrInj, 0x11, 0, 0x15, 0, 0x2C, 0, 0x2F, 0, lang.Therm, lang.OpenCircuit, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrCoil1, 0x11, 0, 0x15, 1, 0x2C, 0, 0x2F, 1, lang.ShortToVcc, lang.ShortToGNDorOpen, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrCoil2, 0x11, 0, 0x15, 2, 0x2C, 0, 0x2F, 2, lang.ShortToVcc, lang.ShortToGNDorOpen, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrIAV, 0x11, 0, 0x15, 3, 0x2C, 0, 0x2F, 3, lang.Therm, lang.OpenCircuit, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrEVAP, 0x11, 0, 0x15, 4, 0x2C, 0, 0x2F, 4, lang.ShortToVcc, lang.ShortToGNDorOpen, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrAirCo, 0x11, 0, 0x15, 5, 0x2C, 0, 0x2F, 5, lang.ShortToVcc, lang.ShortToGNDorOpen, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrFuelPump, 0x11, 0, 0x15, 6, 0x2C, 0, 0x2F, 6, lang.ShortToVcc, lang.ShortToGNDorOpen, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrGenRel, 0x11, 0, 0x15, 7, 0x2C, 0, 0x2F, 7, lang.ShortToVcc, lang.ShortToGNDorOpen, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrACParam, 0x12, 0, 0x16, 0, 0x2D, 0, 0x30, 0, lang.MaxRICH, lang.MaxLEAN, new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrRAM, 0x12, 0, 0x16, 1, 0x2D, 0, 0x30, 1, "", "", new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrROM, 0x12, 0, 0x16, 2, 0x2D, 0, 0x30, 2, "", "", new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrEEPROM, 0x12, 0, 0x16, 3, 0x2D, 0, 0x30, 3, "", "", new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrCPU, 0x12, 0, 0x16, 4, 0x2D, 0, 0x30, 4, "", "", new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrRPMSens, 0x12, 0, 0x16, 5, 0x2D, 0, 0x30, 5, "", "", new errorElement.ErrDecode(err16F)), 
-                new errorElement( lang.ErrF7, 0x12, 0, 0x16, 6, 0x2D, 0, 0x30, 6, "", "", new errorElement.ErrDecode(err16F)), 
+                new errorElement( lang.ErrTPS, 0x10, 0, 0x14, 0, 0x2B, 0, 0x2E, 0, lang.ShortToGND, lang.ShortToVcc, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrMAP, 0x10, 0, 0x14, 1, 0x2B, 0, 0x2E, 1, lang.ShortToVcc, lang.ShortToGND, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrLambda, 0x10, 0, 0x14, 2, 0x2B, 0, 0x2E, 2, "", "", new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrECT, 0x10, 0, 0x14, 3, 0x2B, 0, 0x2E, 3, lang.ShortToGND, lang.ShortToVcc, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrIAT, 0x10, 0, 0x14, 4, 0x2B, 0, 0x2E, 4, lang.ShortToGND, lang.ShortToVcc, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrBattV, 0x10, 0, 0x14, 5, 0x2B, 0, 0x2E, 5, lang.AtMAX, lang.AtMIN, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrIdleReg, 0x10, 0, 0x14, 6, 0x2B, 0, 0x2E, 6, "", "", new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrI8, 0x10, 0, 0x14, 7, 0x2B, 0, 0x2E, 7, "", "", new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrInj, 0x11, 0, 0x15, 0, 0x2C, 0, 0x2F, 0, lang.Therm, lang.OpenCircuit, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrCoil1, 0x11, 0, 0x15, 1, 0x2C, 0, 0x2F, 1, lang.ShortToVcc, lang.ShortToGNDorOpen, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrCoil2, 0x11, 0, 0x15, 2, 0x2C, 0, 0x2F, 2, lang.ShortToVcc, lang.ShortToGNDorOpen, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrIAV, 0x11, 0, 0x15, 3, 0x2C, 0, 0x2F, 3, lang.Therm, lang.OpenCircuit, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrEVAP, 0x11, 0, 0x15, 4, 0x2C, 0, 0x2F, 4, lang.ShortToVcc, lang.ShortToGNDorOpen, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrAirCo, 0x11, 0, 0x15, 5, 0x2C, 0, 0x2F, 5, lang.ShortToVcc, lang.ShortToGNDorOpen, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrFuelPump, 0x11, 0, 0x15, 6, 0x2C, 0, 0x2F, 6, lang.ShortToVcc, lang.ShortToGNDorOpen, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrGenRel, 0x11, 0, 0x15, 7, 0x2C, 0, 0x2F, 7, lang.ShortToVcc, lang.ShortToGNDorOpen, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrACParam, 0x12, 0, 0x16, 0, 0x2D, 0, 0x30, 0, lang.MaxRICH, lang.MaxLEAN, new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrRAM, 0x12, 0, 0x16, 1, 0x2D, 0, 0x30, 1, "", "", new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrROM, 0x12, 0, 0x16, 2, 0x2D, 0, 0x30, 2, "", "", new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrEEPROM, 0x12, 0, 0x16, 3, 0x2D, 0, 0x30, 3, "", "", new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrCPU, 0x12, 0, 0x16, 4, 0x2D, 0, 0x30, 4, "", "", new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrRPMSens, 0x12, 0, 0x16, 5, 0x2D, 0, 0x30, 5, "", "", new errorElement.ErrDecode(err16F)),
+                new errorElement( lang.ErrF7, 0x12, 0, 0x16, 6, 0x2D, 0, 0x30, 6, "", "", new errorElement.ErrDecode(err16F)),
                 new errorElement( lang.ErrF8, 0x12, 0, 0x16, 7, 0x2D, 0, 0x30, 7, "", "", new errorElement.ErrDecode(err16F))
             };
             immoErrors = new errorElement[] {
-                new errorElement( lang.ErrNoSync, 0x71, 0, 0x72, 0, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
-                new errorElement( lang.ErrStartDis, 0x71, 0, 0x72, 1, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
-                new errorElement( lang.ErrUniCode, 0x71, 0, 0x72, 2, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
-                new errorElement( lang.ErrC4, 0x71, 0, 0x72, 3, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
-                new errorElement( lang.ErrBackdoor, 0x71, 0, 0x72, 4, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
-                new errorElement( lang.ErrKeyCode, 0x71, 0, 0x72, 5, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
-                new errorElement( lang.ErrUnrCode, 0x71, 0, 0x72, 6, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
+                new errorElement( lang.ErrNoSync, 0x71, 0, 0x72, 0, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
+                new errorElement( lang.ErrStartDis, 0x71, 0, 0x72, 1, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
+                new errorElement( lang.ErrUniCode, 0x71, 0, 0x72, 2, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
+                new errorElement( lang.ErrC4, 0x71, 0, 0x72, 3, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
+                new errorElement( lang.ErrBackdoor, 0x71, 0, 0x72, 4, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
+                new errorElement( lang.ErrKeyCode, 0x71, 0, 0x72, 5, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
+                new errorElement( lang.ErrUnrCode, 0x71, 0, 0x72, 6, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
                 new errorElement( lang.ErrLinkDown, 0x71, 0, 0x72, 7, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE))
             };
         }

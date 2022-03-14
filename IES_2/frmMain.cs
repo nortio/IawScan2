@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using System.Threading;
-using System.Diagnostics;
-using System.Collections;
-using System.Text.RegularExpressions;
-using System.Runtime.InteropServices;
-using System.IO;
-using System.Timers;
-using ZedGraph;
+﻿using IES_2.ECU;
 using IES_2.Properties;
 using IES_2.Res;
-using IES_2.ECU;
+using System;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Drawing;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System.Timers;
+using System.Windows.Forms;
+using ZedGraph;
 
 namespace IES_2
 {
@@ -1137,7 +1134,7 @@ namespace IES_2
             cbLOG.Checked = Settings.Default.logEnabled;
             cbCompat.Checked = Settings.Default.compatEnabled;
             ecuList = new string[,] { { "auto", lang.autodetect, code.GetCars() }, { iaw16f.name, iaw16f.longName, iaw16f.GetCars() }, { iaw18f.name, iaw18f.longName, iaw18f.GetCars() }, { iaw18fd.name, iaw18fd.longName, iaw18fd.GetCars() }, { iaw8f_68.name, iaw8f_68.longName, iaw8f_68.GetCars() }, { iaw04k.name, iaw04k.longName, iaw04k.GetCars() }, { code.name, code.longName, code.GetCars() } };
-            for (int i = 0; i < ecuList.GetLength(0) ; i++)
+            for (int i = 0; i < ecuList.GetLength(0); i++)
             {
                 dgvRow = dgvECU.Rows[dgvECU.Rows.Add()];
                 dgvRow.Cells[0].Value = ecuList[i, 1];

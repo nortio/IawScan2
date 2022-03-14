@@ -1,5 +1,5 @@
-﻿using System.IO.Ports;
-using IES_2.Res;
+﻿using IES_2.Res;
+using System.IO.Ports;
 
 namespace IES_2.ECU
 {
@@ -98,47 +98,47 @@ namespace IES_2.ECU
             immoErrReq = new byte[] { 0x71, 0x72 };
             clearCodes = new testElement("", false, 10, new byte[] { 0x84 });
             engineErrors = new errorElement[] {
-                new errorElement( lang.ErrTPS, 0x30, 0x39, 0x40, 0, 0x35, 0x3E, 0x45, 5, lang.ShortToGND, lang.ShortToVcc, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrMAP, 0x30, 0x39, 0x40, 1, 0x35, 0x3E, 0x45, 7, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrLambda, 0x30, 0x39, 0x40, 2, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrECT, 0x30, 0x39, 0x40, 3, 0x35, 0x3E, 0x45, 3, lang.ShortToGND, lang.ShortToVcc, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrIAT, 0x30, 0x39, 0x40, 4, 0x35, 0x3E, 0x45, 4, lang.ShortToGND, lang.ShortToVcc, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrBattV, 0x30, 0x39, 0x40, 5, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrIdleReg, 0x30, 0x39, 0x40, 6, 0x35, 0x3E, 0x45, 1, lang.NoAir, lang.TooMuchAir, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrKnockS, 0x30, 0x39, 0x40, 7, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrInjs, 0x31, 0x3A, 0x41, 0, 0x34, 0x3D, 0x44, 0, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrCoil1, 0x31, 0x3A, 0x41, 1, 0x34, 0x3D, 0x44, 1, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrCoil2, 0x31, 0x3A, 0x41, 2, 0x34, 0x3D, 0x44, 2, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrIAV, 0x31, 0x3A, 0x41, 3, 0x34, 0x3D, 0x44, 3, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrEVAP, 0x31, 0x3A, 0x41, 4, 0x34, 0x3D, 0x44, 4, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrAirCo, 0x31, 0x3A, 0x41, 5, 0x34, 0x3D, 0x44, 5, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrFuelPump, 0x31, 0x3A, 0x41, 6, 0x34, 0x3D, 0x44, 6, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrMIL, 0x31, 0x3A, 0x41, 7, 0x34, 0x3D, 0x44, 7, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrO1a, 0x32, 0x3B, 0x42, 0,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrO2a, 0x32, 0x3B, 0x42, 1,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrO3a, 0x32, 0x3B, 0x42, 2,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrO4a, 0x32, 0x3B, 0x42, 3,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrMixRatio, 0x32, 0x3B, 0x42, 4,  0x35, 0x3E, 0x45, 6, lang.MaxLEAN, lang.MaxRICH, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrWasteG, 0x32, 0x3B, 0x42, 5,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrConMet, 0x32, 0x3B, 0x42, 6,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrEGRCtrl, 0x32, 0x3B, 0x42, 7,  0x35, 0x3E, 0x45, 0, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrACParam, 0x33, 0x3C, 0x43, 0,  0x35, 0x3E, 0x45, 2, lang.MaxLEAN, lang.MaxRICH, new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrROM, 0x33, 0x3C, 0x43, 1,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrRAM, 0x33, 0x3C, 0x43, 2,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrEEPROM, 0x33, 0x3C, 0x43, 3,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrCPU, 0x33, 0x3C, 0x43, 4,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrRPMSens, 0x33, 0x3C, 0x43, 5,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
-                new errorElement( lang.ErrAutoTrans, 0x33, 0x3C, 0x43, 6,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)), 
+                new errorElement( lang.ErrTPS, 0x30, 0x39, 0x40, 0, 0x35, 0x3E, 0x45, 5, lang.ShortToGND, lang.ShortToVcc, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrMAP, 0x30, 0x39, 0x40, 1, 0x35, 0x3E, 0x45, 7, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrLambda, 0x30, 0x39, 0x40, 2, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrECT, 0x30, 0x39, 0x40, 3, 0x35, 0x3E, 0x45, 3, lang.ShortToGND, lang.ShortToVcc, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrIAT, 0x30, 0x39, 0x40, 4, 0x35, 0x3E, 0x45, 4, lang.ShortToGND, lang.ShortToVcc, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrBattV, 0x30, 0x39, 0x40, 5, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrIdleReg, 0x30, 0x39, 0x40, 6, 0x35, 0x3E, 0x45, 1, lang.NoAir, lang.TooMuchAir, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrKnockS, 0x30, 0x39, 0x40, 7, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrInjs, 0x31, 0x3A, 0x41, 0, 0x34, 0x3D, 0x44, 0, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrCoil1, 0x31, 0x3A, 0x41, 1, 0x34, 0x3D, 0x44, 1, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrCoil2, 0x31, 0x3A, 0x41, 2, 0x34, 0x3D, 0x44, 2, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrIAV, 0x31, 0x3A, 0x41, 3, 0x34, 0x3D, 0x44, 3, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrEVAP, 0x31, 0x3A, 0x41, 4, 0x34, 0x3D, 0x44, 4, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrAirCo, 0x31, 0x3A, 0x41, 5, 0x34, 0x3D, 0x44, 5, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrFuelPump, 0x31, 0x3A, 0x41, 6, 0x34, 0x3D, 0x44, 6, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrMIL, 0x31, 0x3A, 0x41, 7, 0x34, 0x3D, 0x44, 7, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrO1a, 0x32, 0x3B, 0x42, 0,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrO2a, 0x32, 0x3B, 0x42, 1,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrO3a, 0x32, 0x3B, 0x42, 2,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrO4a, 0x32, 0x3B, 0x42, 3,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrMixRatio, 0x32, 0x3B, 0x42, 4,  0x35, 0x3E, 0x45, 6, lang.MaxLEAN, lang.MaxRICH, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrWasteG, 0x32, 0x3B, 0x42, 5,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrConMet, 0x32, 0x3B, 0x42, 6,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrEGRCtrl, 0x32, 0x3B, 0x42, 7,  0x35, 0x3E, 0x45, 0, lang.ShortToGNDorOpen, lang.ShortToVcc, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrACParam, 0x33, 0x3C, 0x43, 0,  0x35, 0x3E, 0x45, 2, lang.MaxLEAN, lang.MaxRICH, new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrROM, 0x33, 0x3C, 0x43, 1,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrRAM, 0x33, 0x3C, 0x43, 2,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrEEPROM, 0x33, 0x3C, 0x43, 3,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrCPU, 0x33, 0x3C, 0x43, 4,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrRPMSens, 0x33, 0x3C, 0x43, 5,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
+                new errorElement( lang.ErrAutoTrans, 0x33, 0x3C, 0x43, 6,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F)),
                 new errorElement( lang.ErrEGRVal, 0x33, 0x3C, 0x43, 7,  0, 0, 0, 0, "", "", new errorElement.ErrDecode(err18F))
             };
             immoErrors = new errorElement[] {
-                new errorElement( lang.ErrNoSync, 0x71, 0, 0x72, 0, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
-                new errorElement( lang.ErrStartDis, 0x71, 0, 0x72, 1, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
-                new errorElement( lang.ErrUniCode, 0x71, 0, 0x72, 2, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
-                new errorElement( lang.ErrC4, 0x71, 0, 0x72, 3, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
-                new errorElement( lang.ErrBackdoor, 0x71, 0, 0x72, 4, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
-                new errorElement( lang.ErrKeyCode, 0x71, 0, 0x72, 5, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
-                new errorElement( lang.ErrUnrCode, 0x71, 0, 0x72, 6, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)), 
+                new errorElement( lang.ErrNoSync, 0x71, 0, 0x72, 0, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
+                new errorElement( lang.ErrStartDis, 0x71, 0, 0x72, 1, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
+                new errorElement( lang.ErrUniCode, 0x71, 0, 0x72, 2, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
+                new errorElement( lang.ErrC4, 0x71, 0, 0x72, 3, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
+                new errorElement( lang.ErrBackdoor, 0x71, 0, 0x72, 4, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
+                new errorElement( lang.ErrKeyCode, 0x71, 0, 0x72, 5, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
+                new errorElement( lang.ErrUnrCode, 0x71, 0, 0x72, 6, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE)),
                 new errorElement( lang.ErrLinkDown, 0x71, 0, 0x72, 7, 0, 0, 0, 0, "", "", new errorElement.ErrDecode(errCODE))
             };
         }

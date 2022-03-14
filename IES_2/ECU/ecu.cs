@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.IO.Ports;
+﻿using System.IO.Ports;
 using System.Threading;
-using IES_2.Res;
 
 // At 900 RPM a 4 cilinder 4 stroke engine makes 900 RPM * 2 strokes/revolution * 60 minutes in one hour = 108,000 strokes.
 // So if the ECU reads 480 mg/stroke at idle, it equals to 108,000 * 480e-6 = 52 kg/hour air flow.

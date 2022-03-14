@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -18,7 +15,7 @@ namespace IES_2
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = AssemblyDescription + Environment.NewLine + Environment.NewLine + "Author takes no responsibility for any damages caused by using this program." + Environment.NewLine + Environment.NewLine + "Special thanks for:" + Environment.NewLine + "T5, Nailed Barnacle, Woj76, Yani, Pete, Gerrelt and others who actively helped me in developing and testing." +
-                Environment.NewLine + Environment.NewLine + 
+                Environment.NewLine + Environment.NewLine +
 @"LICENSE TERMS AND CONDITIONS:
 
 Copyright (c) 2011-15, TzOk
