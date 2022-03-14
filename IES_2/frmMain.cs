@@ -18,6 +18,7 @@ namespace IES_2
 {
     public partial class frmMain : Form
     {
+        private System.IO.Ports.SerialPort serialPort1 = new System.IO.Ports.SerialPort();
         AboutBox1 aboutDialog;
         private bool[] Request;
         public ecu ECU;
@@ -58,8 +59,10 @@ namespace IES_2
             InitializeComponent();
             //t.Abort();
 
-            FrmOneByte = new frmOneByte();
-            FrmOneByte.Owner = this;
+            FrmOneByte = new frmOneByte
+            {
+                Owner = this
+            };
 
             tLog = new System.Timers.Timer();
             tGraph = new System.Timers.Timer();
