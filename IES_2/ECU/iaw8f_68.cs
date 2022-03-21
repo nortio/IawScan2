@@ -169,7 +169,7 @@ namespace IES_2.ECU
         private errorState err8F_68(byte rAbase, byte rVbase, byte rSbase, byte oBase, byte rAext, byte rVext, byte rSext, byte oExt, string hExt, string lExt)
         {   // A = Active, V = Verified, S = Stored
 
-            errorState result = new errorState();
+            errorState result = new();
             result.isActive = Buffer[rAbase].GetBit(oBase);
             result.isStored = Buffer[rSbase].GetBit(oBase);
 
@@ -180,7 +180,7 @@ namespace IES_2.ECU
         }
         private errorState errCODE(byte rAbase, byte rVbase, byte rSbase, byte oBase, byte rAext, byte rVext, byte rSext, byte oExt, string hExt, string lExt)
         {
-            errorState result = new errorState();
+            errorState result = new();
             result.isActive = Buffer[rAbase].GetBit(oBase);
             result.isStored = Buffer[rSbase].GetBit(oBase);
             result.Reason = "FIAT CODE";

@@ -18,7 +18,7 @@ namespace IES_2
 {
     public partial class frmMain : Form
     {
-        private System.IO.Ports.SerialPort serialPort1 = new System.IO.Ports.SerialPort();
+        private System.IO.Ports.SerialPort serialPort1 = new();
         AboutBox1 aboutDialog;
         private bool[] Request;
         public ecu ECU;
@@ -103,7 +103,7 @@ namespace IES_2
 
         #region Accelerators initialsation routines
 
-        readonly Hashtable _accelerators = new Hashtable();
+        readonly Hashtable _accelerators = new();
 
         protected delegate void AcceleratorAction();
 
@@ -549,7 +549,7 @@ namespace IES_2
             int i = 1;
             byte[] ISOcod = new byte[6];
             string ISO;
-            Stopwatch sw = new Stopwatch();
+            Stopwatch sw = new();
             sw.Start();
             while ((sw.ElapsedMilliseconds < wait) & !sync)
             {
@@ -779,7 +779,7 @@ namespace IES_2
             testElement Test = (testElement)e.Argument;
             bool timeout = false;
             byte Response = 0;
-            Stopwatch sw = new Stopwatch();
+            Stopwatch sw = new();
 
             // Initialize ADM
             if (!InitActiveDiag())

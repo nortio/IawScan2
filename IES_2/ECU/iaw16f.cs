@@ -199,7 +199,7 @@ namespace IES_2.ECU
         #region Errors decoding functions
         private errorState err16F(byte rAbase, byte rVbase, byte rSbase, byte oBase, byte rAext, byte rVext, byte rSext, byte oExt, string hExt, string lExt)
         {
-            errorState result = new errorState();
+            errorState result = new();
             result.isActive = Buffer[rAbase].GetBit(oBase);
             result.isStored = Buffer[rSbase].GetBit(oBase);
             //result.Reason = (Buffer[rAbase].GetBit(oBase) ? Buffer[rAext].GetBit(oExt) : Buffer[rSext].GetBit(oExt)) ? hExt : lExt;
@@ -208,7 +208,7 @@ namespace IES_2.ECU
         }
         private errorState errCODE(byte rAbase, byte rVbase, byte rSbase, byte oBase, byte rAext, byte rVext, byte rSext, byte oExt, string hExt, string lExt)
         {
-            errorState result = new errorState();
+            errorState result = new();
             result.isActive = Buffer[rAbase].GetBit(oBase);
             result.isStored = Buffer[rSbase].GetBit(oBase);
             result.Reason = "FIAT CODE";
