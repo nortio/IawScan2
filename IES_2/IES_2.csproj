@@ -22,7 +22,6 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <UseWindowsForms>true</UseWindowsForms>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
-    <UseWPF>False</UseWPF>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Res\MIL.ico" />

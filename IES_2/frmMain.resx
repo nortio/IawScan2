@@ -107,7 +107,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblIsoCode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 47</value>
+    <value>146, 47</value>
   </data>
   <data name="lblIsoCode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -143,7 +143,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblCarModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 47</value>
+    <value>429, 47</value>
   </data>
   <data name="lblCarModel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -251,7 +251,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblEcuType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 10</value>
+    <value>429, 10</value>
   </data>
   <data name="lblEcuType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -323,7 +323,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblRepCode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 10</value>
+    <value>146, 10</value>
   </data>
   <data name="lblRepCode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
