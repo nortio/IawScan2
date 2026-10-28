@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label24.Text" xml:space="preserve">
+    <value>ISO Kodu:</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Araç Modeli:</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>ECU Tipi:</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Yedek Parça Kodu:</value>
+  </data>
+  <data name="btnConnect.Text" xml:space="preserve">
+    <value>[F10] Bağlan</value>
+  </data>
+  <data name="btnConnect.ToolTip" xml:space="preserve">
+    <value>ECU'ya bağlan/bağlantıyı kes, Ctrl+Tıklama - Simülasyon Modu</value>
+  </data>
+  <data name="cbCompat.Text" xml:space="preserve">
+    <value>Uyumlu mod</value>
+  </data>
+  <data name="cbCompat.ToolTip" xml:space="preserve">
+    <value>Daha iyi uyumluluk için yanıt ile sonraki istek arasına fazladan 4 ms gecikme ekle</value>
+  </data>
+  <data name="cbLOG.Text" xml:space="preserve">
+    <value>Dosyaya kayıt</value>
+  </data>
+  <data name="cbLOG.ToolTip" xml:space="preserve">
+    <value>Bağlantı kaydını dosyaya yazmayı etkinleştir</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>COM Seçin</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>ECU Seçin</value>
+  </data>
+  <data name="comCOM.HeaderText" xml:space="preserve">
+    <value>COM</value>
+  </data>
+  <data name="ecuECU.HeaderText" xml:space="preserve">
+    <value>ECU</value>
+  </data>
+  <data name="tbHelp.Text" xml:space="preserve">
+    <value># Alt panel:
+   [F10] Bağlan - bağlan/bağlantıyı kes düğmesi; Ctrl tuşu basılıyken tıklanırsa seçili ECU için SİMÜLASYON MODU başlatılır.
+   Lütfen önce F10 tuşuna basın/Bağlan düğmesine tıklayın, ardından istendiğinde kontağı açın.
+
+# Ayarlar sekmesi:
+   ECU Seçin - aracınıza uygun Motor Kontrol Ünitesi tipini seçin. Otomatik Algılama'yı da kullanabilirsiniz.
+   COM Seçin - RS-232/USB Diyagnostik Arayüzünüzün COM portunu veya sanal COM portunu seçin.
+   Desteklenen arayüz tipi ISO-KKL'dir (VAG-COM 409-1 Klonu olarak da bilinir).
+   USB arayüz kullanıyorsanız, IAW Scan 2 uygulamasını başlatmadan ÖNCE arayüzün USB portuna takılı olduğundan emin olun.
+   Dosyaya kayıt - diyagnostik oturumunu, uygulama klasöründeki LOG klasöründe bulunan IESlog_&lt;tarih_saat&gt; dosyasına kaydeder.
+   Uyumlu mod - ECU'dan yanıt alınması ile ECU'ya bir sonraki isteğin gönderilmesi arasına fazladan 4 ms gecikme ekler.
+
+# Parametreler sekmesi:
+   Seçili parametrenin okunmasını açmak için soldaki onay kutusunu kullanın; tüm parametreleri seçmek için A tuşuna/düğmesine, tüm seçimleri kaldırmak için N tuşuna/düğmesine de basabilirsiniz.
+   Tek tek işaretlenen parametreler Grafikler sekmesindeki İz listesine işaretli olarak eklenir; A tuşu/düğmesi ile tüm parametreler eklendiğinde ise İz listesine işaretsiz olarak eklenir.
+   Ne kadar çok parametre seçerseniz yenileme hızının o kadar düşük olacağını unutmayın.
+   Hataları sorgula - parametreler gösterilirken hataların da sorgulanmasını sağlar; bu, parametre yenileme hızını düşürür ancak hatalar dosyaya kaydedilir.
+
+# Hatalar sekmesi:
+   Liste, kayıtlı, doğrulanmış ve aktif hataları ve mümkünse nedenlerini gösterir. MIL onay kutusu, ilgili hatanın arıza lambasını (MIL) yakıp yakmadığını belirtir. IAW-x6F ECU'larda, MIL sütununda hiçbir hata işaretli değilken arıza lambası yanıyor olabilir - bu durumda hata mevcut ECU güç döngüsü sırasında oluşmuş ve kaydedilmiştir, ancak artık aktif değildir.
+   Üç (IAW-x6F'de iki) olası hata durumu vardır:
+@ Aktif - hata şu anda mevcut.
+@ Doğrulanmış - hata, mevcut ECU güç döngüsü sırasında hafızaya alınacak kadar uzun süre mevcut oldu/mevcut (IAW-x6F'de yoktur).
+@ Kayıtlı - hata önceki ECU güç döngüsü sırasında doğrulanmıştır (IAW-x6F'de Doğrulanmış ve Kayıtlı durumlarının toplamıdır).
+   Temizle düğmesi - kayıtlı hataları ECU'dan silmek için C tuşuna basın veya bu düğmeye tıklayın.
+
+# Testler sekmesi:
+   Liste, mevcut ECU için kullanılabilir testleri gösterir. Bazı modüllerin isteğe bağlı olduğunu ve aracınızda bulunmayabileceğini unutmayın. Ayrıca BAŞARILI durumunun bileşenin tamamen çalışır olduğu anlamına gelmediğini de unutmayın.
+   Testler yalnızca seçili bileşeni çalıştırır; böylece tamirci bileşenin doğru çalışıp çalışmadığını gözlemleyebilir.
+   Çalıştır düğmesi - seçili testi çalıştırmak için E tuşuna basın veya bu düğmeye tıklayın.
+
+# Grafikler sekmesi:
+   İz - kullanılabilir parametrelerin listesi; hangi parametrelerin grafiğe ve CSV dosyasına kaydedileceğini seçebilirsiniz.
+   Yalnızca Parametreler sekmesinde de kaydetmek istediğiniz parametreleri seçmeniz önemle tavsiye edilir.
+   Başlat düğmesi - seçili parametrelerin kaydını başlatmak/durdurmak için S tuşuna basın veya bu düğmeye tıklayın. Grafikle birlikte kaydedilen verileri içeren bir CSV dosyası da oluşturulur. Dosyanın adı IESexp_&lt;tarih_saat&gt; olup uygulama klasöründeki LOG klasöründe bulunur.</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Yardım</value>
+  </data>
+  <data name="tabPage0.Text" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="parName.HeaderText" xml:space="preserve">
+    <value>Parametre</value>
+  </data>
+  <data name="parValue.HeaderText" xml:space="preserve">
+    <value>Değer</value>
+  </data>
+  <data name="parUnit.HeaderText" xml:space="preserve">
+    <value>Birim</value>
+  </data>
+  <data name="cbQueryErrors.Text" xml:space="preserve">
+    <value>Hataları sorgula</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>[F2] Parametreler</value>
+  </data>
+  <data name="errDescr.HeaderText" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="errReason.HeaderText" xml:space="preserve">
+    <value>Neden</value>
+  </data>
+  <data name="errState.HeaderText" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="errMIL.HeaderText" xml:space="preserve">
+    <value>MIL</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Durumlar:
+[A]ktif
+[D]oğrulanmış
+[K]ayıtlı</value>
+  </data>
+  <data name="btnClear.Text" xml:space="preserve">
+    <value>Temizle [&amp;C]</value>
+  </data>
+  <data name="btnClear.ToolTip" xml:space="preserve">
+    <value>Kayıtlı hataları sil</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>[F3] Hatalar</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Sonuç</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Lütfen Bobin testini Enjektör testinin hemen ardından çalıştırmayın!</value>
+  </data>
+  <data name="btnExecute.Text" xml:space="preserve">
+    <value>Çalıştır [&amp;E]</value>
+  </data>
+  <data name="btnExecute.ToolTip" xml:space="preserve">
+    <value>Seçili testi çalıştır</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>[F4] Testler</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>İz</value>
+  </data>
+  <data name="btnGraph.Text" xml:space="preserve">
+    <value>Başlat [&amp;S]</value>
+  </data>
+  <data name="btnGraph.ToolTip" xml:space="preserve">
+    <value>Veri toplamayı başlat/durdur</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>[F5] Grafikler</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>Ayarlama</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn4.HeaderText" xml:space="preserve">
+    <value>Sonuç</value>
+  </data>
+  <data name="btnAdj.Text" xml:space="preserve">
+    <value>Çalıştır [&amp;E]</value>
+  </data>
+  <data name="btnAdj.ToolTip" xml:space="preserve">
+    <value>Seçili ayarlamayı çalıştır</value>
+  </data>
+  <data name="tabPage5.Text" xml:space="preserve">
+    <value>[F6] Ayarlamalar</value>
+  </data>
+  <data name="toolStripButton1.ToolTipText" xml:space="preserve">
+    <value>IAW Scan 2 Hakkında...</value>
+  </data>
+</root>

@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACrelay" xml:space="preserve">
+    <value>Klima Rölesi</value>
+  </data>
+  <data name="ADGAIN" xml:space="preserve">
+    <value>Otomatik Kalibrasyon Kazanç Parametresi (orta yük)</value>
+  </data>
+  <data name="ADOFFPL" xml:space="preserve">
+    <value>Otomatik Kalibrasyon Ofset Parametresi (min. yük)</value>
+  </data>
+  <data name="ADOFFPURG" xml:space="preserve">
+    <value>Otomatik Kalibrasyon Ofset Parametresi (min. yük, EVAP açık)</value>
+  </data>
+  <data name="ADOFFSET" xml:space="preserve">
+    <value>Otomatik Kalibrasyon Ofset Parametresi (min. yük, EVAP kapalı)</value>
+  </data>
+  <data name="ALFAFTR" xml:space="preserve">
+    <value>FLT'den Step Motor Düzeltmesi</value>
+  </data>
+  <data name="ALFAR" xml:space="preserve">
+    <value>Rölanti Step Motoru Konumu</value>
+  </data>
+  <data name="ALFAU" xml:space="preserve">
+    <value>Otomatik Kalibrasyon Düzeltmesi</value>
+  </data>
+  <data name="ALFAUC" xml:space="preserve">
+    <value>Klima ile Otomatik Kalibrasyon Düzeltmesi</value>
+  </data>
+  <data name="ANG_PAP0" xml:space="preserve">
+    <value>Gaz Kelebeği Açısı</value>
+  </data>
+  <data name="AVANCE" xml:space="preserve">
+    <value>Ateşleme Avansı</value>
+  </data>
+  <data name="ErrNoSync" xml:space="preserve">
+    <value>ECU, CODE ile senkronize değil</value>
+  </data>
+  <data name="ErrStartDis" xml:space="preserve">
+    <value>ECU'nun Motoru Çalıştırmasına İzin Verilmiyor</value>
+  </data>
+  <data name="ErrUniCode" xml:space="preserve">
+    <value>ECU 'Evrensel Kod'u aldı</value>
+  </data>
+  <data name="ErrC4" xml:space="preserve">
+    <value>Bilinmeyen CODE HATASI (4)</value>
+  </data>
+  <data name="ErrBackdoor" xml:space="preserve">
+    <value>Arka Kapı Etkinleştirildi</value>
+  </data>
+  <data name="ErrKeyCode" xml:space="preserve">
+    <value>Anahtar Kodu Hatası</value>
+  </data>
+  <data name="ErrUnrCode" xml:space="preserve">
+    <value>Hatalı veya Tanınmayan Kod</value>
+  </data>
+  <data name="ErrLinkDown" xml:space="preserve">
+    <value>Kod Alınmadı veya Bağlantı Kesik</value>
+  </data>
+  <data name="Coil1" xml:space="preserve">
+    <value>Bobin 1</value>
+  </data>
+  <data name="Coil2" xml:space="preserve">
+    <value>Bobin 2</value>
+  </data>
+  <data name="CONS_REG" xml:space="preserve">
+    <value>Rölanti Devri</value>
+  </data>
+  <data name="DELREG" xml:space="preserve">
+    <value>Step Motor Düzeltmesi (Delta)</value>
+  </data>
+  <data name="EVAP" xml:space="preserve">
+    <value>EVAP Valfi</value>
+  </data>
+  <data name="ErrACParam" xml:space="preserve">
+    <value>Otomatik Kalibrasyon Parametresi</value>
+  </data>
+  <data name="ErrRAM" xml:space="preserve">
+    <value>RAM</value>
+  </data>
+  <data name="ErrROM" xml:space="preserve">
+    <value>ROM</value>
+  </data>
+  <data name="ErrEEPROM" xml:space="preserve">
+    <value>EEPROM</value>
+  </data>
+  <data name="ErrCPU" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="ErrRPMSens" xml:space="preserve">
+    <value>ÜÖN/Devir Sensörü</value>
+  </data>
+  <data name="ErrF7" xml:space="preserve">
+    <value>Bilinmeyen FONKSİYON HATASI (7)</value>
+  </data>
+  <data name="ErrF8" xml:space="preserve">
+    <value>Bilinmeyen FONKSİYON HATASI (8)</value>
+  </data>
+  <data name="FuelPump" xml:space="preserve">
+    <value>Yakıt Pompası Rölesi</value>
+  </data>
+  <data name="GenericRelay" xml:space="preserve">
+    <value>Genel Röle</value>
+  </data>
+  <data name="ErrTPS" xml:space="preserve">
+    <value>Gaz Kelebeği Konum Sensörü</value>
+  </data>
+  <data name="ErrMAP" xml:space="preserve">
+    <value>MAP Sensörü</value>
+  </data>
+  <data name="ErrLambda" xml:space="preserve">
+    <value>Lambda Sensörü</value>
+  </data>
+  <data name="ErrECT" xml:space="preserve">
+    <value>Su Sıcaklık Sensörü</value>
+  </data>
+  <data name="ErrIAT" xml:space="preserve">
+    <value>Hava Sıcaklık Sensörü</value>
+  </data>
+  <data name="ErrBattV" xml:space="preserve">
+    <value>Akü Voltajı</value>
+  </data>
+  <data name="ErrIdleReg" xml:space="preserve">
+    <value>Rölanti Regülasyonu</value>
+  </data>
+  <data name="ErrI8" xml:space="preserve">
+    <value>Bilinmeyen GİRİŞ HATASI (8)</value>
+  </data>
+  <data name="Injector" xml:space="preserve">
+    <value>Enjektör</value>
+  </data>
+  <data name="INTEGR" xml:space="preserve">
+    <value>Rölanti Step Motoru İntegral Kazancı</value>
+  </data>
+  <data name="K_O2" xml:space="preserve">
+    <value>Lambda Sondası Düzeltmesi</value>
+  </data>
+  <data name="MP2_MP8" xml:space="preserve">
+    <value>Manifold Mutlak Basıncı</value>
+  </data>
+  <data name="MT_AIR_L" xml:space="preserve">
+    <value>Hava Sıcaklığı</value>
+  </data>
+  <data name="MT_EAU_L" xml:space="preserve">
+    <value>Su Sıcaklığı</value>
+  </data>
+  <data name="ErrInj" xml:space="preserve">
+    <value>Enjektör</value>
+  </data>
+  <data name="ErrCoil1" xml:space="preserve">
+    <value>Ateşleme Bobini 1</value>
+  </data>
+  <data name="ErrCoil2" xml:space="preserve">
+    <value>Ateşleme Bobini 2</value>
+  </data>
+  <data name="ErrIAV" xml:space="preserve">
+    <value>Rölanti Step Motoru</value>
+  </data>
+  <data name="ErrEVAP" xml:space="preserve">
+    <value>EVAP Valfi</value>
+  </data>
+  <data name="ErrAirCo" xml:space="preserve">
+    <value>Klima</value>
+  </data>
+  <data name="ErrFuelPump" xml:space="preserve">
+    <value>Yakıt Pompası</value>
+  </data>
+  <data name="ErrGenRel" xml:space="preserve">
+    <value>Genel Sistem Rölesi</value>
+  </data>
+  <data name="OFNNTR" xml:space="preserve">
+    <value>Rölanti Devri Ofseti</value>
+  </data>
+  <data name="PERIODE" xml:space="preserve">
+    <value>Motor Devri</value>
+  </data>
+  <data name="PROP" xml:space="preserve">
+    <value>Rölanti Step Motoru Oransal Kazancı</value>
+  </data>
+  <data name="REVmeter" xml:space="preserve">
+    <value>Devir Göstergesi</value>
+  </data>
+  <data name="StaEngRun" xml:space="preserve">
+    <value>Motor Çalışıyor</value>
+  </data>
+  <data name="StaStepACOK" xml:space="preserve">
+    <value>Step Motor Otomatik Kalibrasyonu ETKİN</value>
+  </data>
+  <data name="StaPLatchOK" xml:space="preserve">
+    <value>Güç Tutma Hattı TAMAM</value>
+  </data>
+  <data name="StaSensOK" xml:space="preserve">
+    <value>Sensör Sinyalleri TAMAM</value>
+  </data>
+  <data name="StaThrMM" xml:space="preserve">
+    <value>Gaz Kelebeği Min/Maks Konumda</value>
+  </data>
+  <data name="StaClLoop" xml:space="preserve">
+    <value>Lambda Sensörü Kapalı Çevrimde</value>
+  </data>
+  <data name="StaAirCoON" xml:space="preserve">
+    <value>Klima AÇIK</value>
+  </data>
+  <data name="StaMixACOK" xml:space="preserve">
+    <value>Karışım Otomatik Kalibrasyonu ETKİN</value>
+  </data>
+  <data name="steps" xml:space="preserve">
+    <value>adım</value>
+  </data>
+  <data name="TRIMRAM" xml:space="preserve">
+    <value>Trimer Konumu</value>
+  </data>
+  <data name="T_INJ_AP" xml:space="preserve">
+    <value>Enjeksiyon Süresi</value>
+  </data>
+  <data name="V_BATT" xml:space="preserve">
+    <value>Akü Voltajı</value>
+  </data>
+  <data name="yes_no" xml:space="preserve">
+    <value>EVET;;HAYIR</value>
+  </data>
+  <data name="AtMAX" xml:space="preserve">
+    <value>MAKS Üzerinde</value>
+  </data>
+  <data name="AtMIN" xml:space="preserve">
+    <value>MİN Altında</value>
+  </data>
+  <data name="MaxLEAN" xml:space="preserve">
+    <value>Maks FAKİR</value>
+  </data>
+  <data name="MaxRICH" xml:space="preserve">
+    <value>Maks ZENGİN</value>
+  </data>
+  <data name="OpenCircuit" xml:space="preserve">
+    <value>Açık Devre</value>
+  </data>
+  <data name="rpm" xml:space="preserve">
+    <value>d/dk</value>
+  </data>
+  <data name="ShortToGND" xml:space="preserve">
+    <value>Şaseye Kısa Devre</value>
+  </data>
+  <data name="ShortToGNDorOpen" xml:space="preserve">
+    <value>Şaseye Kısa Devre/Açık Devre</value>
+  </data>
+  <data name="ShortToVcc" xml:space="preserve">
+    <value>+Vcc'ye Kısa Devre</value>
+  </data>
+  <data name="Therm" xml:space="preserve">
+    <value>Şase/+Vcc'ye Kısa Devre/Termik</value>
+  </data>
+  <data name="Act" xml:space="preserve">
+    <value>[A]</value>
+  </data>
+  <data name="Sto" xml:space="preserve">
+    <value>[K]</value>
+  </data>
+  <data name="Ver" xml:space="preserve">
+    <value>[D]</value>
+  </data>
+  <data name="autodetect" xml:space="preserve">
+    <value>Otomatik Algılama</value>
+  </data>
+  <data name="Connecting" xml:space="preserve">
+    <value>Lütfen kontağı açın...</value>
+  </data>
+  <data name="UnknownISO" xml:space="preserve">
+    <value>Bilinmiyor</value>
+  </data>
+  <data name="F10_Connect" xml:space="preserve">
+    <value>[F10] Bağlan</value>
+  </data>
+  <data name="F10_Disconnect" xml:space="preserve">
+    <value>[F10] Bağlantıyı Kes</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>İPTAL EDİLDİ</value>
+  </data>
+  <data name="ClearingErrors" xml:space="preserve">
+    <value>Hata kodları siliniyor...</value>
+  </data>
+  <data name="EnsureIgnOnEngStop" xml:space="preserve">
+    <value>Lütfen kontağın AÇIK ve motorun DURMUŞ olduğundan emin olun.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>BAŞARISIZ</value>
+  </data>
+  <data name="InitFailed" xml:space="preserve">
+    <value>BAŞLATMA HATASI</value>
+  </data>
+  <data name="Passed" xml:space="preserve">
+    <value>BAŞARILI</value>
+  </data>
+  <data name="TestDuration" xml:space="preserve">
+    <value>Test {0} saniyeden uzun sürerse lütfen kontağı kapatın ve uygulamayı kapatın!</value>
+  </data>
+  <data name="Testing" xml:space="preserve">
+    <value>TEST EDİLİYOR: {0}...</value>
+  </data>
+  <data name="Timeout" xml:space="preserve">
+    <value>ZAMAN AŞIMI</value>
+  </data>
+  <data name="ConMeter" xml:space="preserve">
+    <value>Yakıt Tüketim Göstergesi</value>
+  </data>
+  <data name="EGR" xml:space="preserve">
+    <value>EGR Valfi</value>
+  </data>
+  <data name="ErrAutoTrans" xml:space="preserve">
+    <value>Otomatik Şanzıman</value>
+  </data>
+  <data name="ErrEGRVal" xml:space="preserve">
+    <value>EGR Valfi</value>
+  </data>
+  <data name="ErrKnockS" xml:space="preserve">
+    <value>Vuruntu Sensörü</value>
+  </data>
+  <data name="Injectors" xml:space="preserve">
+    <value>Enjektörler</value>
+  </data>
+  <data name="MIL" xml:space="preserve">
+    <value>Arıza Lambası (MIL)</value>
+  </data>
+  <data name="NoAir" xml:space="preserve">
+    <value>Hava Yok</value>
+  </data>
+  <data name="ErrO1a" xml:space="preserve">
+    <value>Bilinmeyen ÇIKIŞ Hatası (1a)</value>
+  </data>
+  <data name="ErrInjs" xml:space="preserve">
+    <value>Enjektörler</value>
+  </data>
+  <data name="ErrO2a" xml:space="preserve">
+    <value>Bilinmeyen ÇIKIŞ Hatası (2a)</value>
+  </data>
+  <data name="ErrO3a" xml:space="preserve">
+    <value>Bilinmeyen ÇIKIŞ Hatası (3a)</value>
+  </data>
+  <data name="ErrO4a" xml:space="preserve">
+    <value>Bilinmeyen ÇIKIŞ Hatası (4a)</value>
+  </data>
+  <data name="ErrMixRatio" xml:space="preserve">
+    <value>Karışım oranı</value>
+  </data>
+  <data name="ErrWasteG" xml:space="preserve">
+    <value>Waste Gate</value>
+  </data>
+  <data name="ErrConMet" xml:space="preserve">
+    <value>Yakıt Tüketim Göstergesi</value>
+  </data>
+  <data name="ErrEGRCtrl" xml:space="preserve">
+    <value>EGR Kontrolü</value>
+  </data>
+  <data name="ErrMIL" xml:space="preserve">
+    <value>Arıza Lambası (MIL)</value>
+  </data>
+  <data name="StaAdvDecr" xml:space="preserve">
+    <value>Vuruntu Nedeniyle Ateşleme Avansı Azaltıldı</value>
+  </data>
+  <data name="StaGearEng" xml:space="preserve">
+    <value>Vites Takılı</value>
+  </data>
+  <data name="TooMuchAir" xml:space="preserve">
+    <value>Çok Fazla Hava</value>
+  </data>
+  <data name="COMnotValid" xml:space="preserve">
+    <value>Arayüz portu HATASI</value>
+  </data>
+  <data name="OFFSET1" xml:space="preserve">
+    <value>Otomatik Kalibrasyon Enjeksiyon Ofseti @ BÖLGE 1</value>
+  </data>
+  <data name="OFFSET2" xml:space="preserve">
+    <value>Otomatik Kalibrasyon Enjeksiyon Ofseti @ BÖLGE 2</value>
+  </data>
+  <data name="OFFSET3" xml:space="preserve">
+    <value>Otomatik Kalibrasyon Enjeksiyon Ofseti @ BÖLGE 3</value>
+  </data>
+  <data name="OFFSET4" xml:space="preserve">
+    <value>Otomatik Kalibrasyon Enjeksiyon Ofseti @ BÖLGE 4</value>
+  </data>
+  <data name="OFFSET5" xml:space="preserve">
+    <value>Otomatik Kalibrasyon Enjeksiyon Ofseti @ BÖLGE 5</value>
+  </data>
+  <data name="OFFSET6" xml:space="preserve">
+    <value>Otomatik Kalibrasyon Enjeksiyon Ofseti @ BÖLGE 6</value>
+  </data>
+  <data name="OFFSETm" xml:space="preserve">
+    <value>Otomatik Kalibrasyon Enjeksiyon Ofseti @ RÖLANTİ</value>
+  </data>
+  <data name="PreviouslySelectedPort" xml:space="preserve">
+    <value>Daha önce seçilen {0} portu artık kullanılamıyor. Lütfen başka bir port seçin.</value>
+  </data>
+  <data name="ErrI2" xml:space="preserve">
+    <value>Bilinmeyen GİRİŞ HATASI (2)</value>
+  </data>
+  <data name="ErrInj1" xml:space="preserve">
+    <value>Enjektörler (grup 1)</value>
+  </data>
+  <data name="ErrInj2" xml:space="preserve">
+    <value>Enjektörler (grup 2)</value>
+  </data>
+  <data name="ConnectedTo" xml:space="preserve">
+    <value>BAĞLANILAN:</value>
+  </data>
+  <data name="Errors" xml:space="preserve">
+    <value>HATALAR:</value>
+  </data>
+  <data name="Parameters" xml:space="preserve">
+    <value>PARAMETRELER:</value>
+  </data>
+  <data name="Simulation" xml:space="preserve">
+    <value>SİMÜLASYON MODU!!!</value>
+  </data>
+  <data name="K_O2_RAW" xml:space="preserve">
+    <value>Lambda Sondası Voltajı</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Başlat [&amp;S]</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Durdur [&amp;S]</value>
+  </data>
+  <data name="EscCancel" xml:space="preserve">
+    <value>İptal etmek için [Esc] tuşuna basın</value>
+  </data>
+  <data name="CommLost" xml:space="preserve">
+    <value>ECU Yanıt Vermiyor</value>
+  </data>
+  <data name="Press_F10" xml:space="preserve">
+    <value>Bağlantıyı kapatmak için [F10], yeniden bağlanmayı denemek için [F12] tuşuna basın</value>
+  </data>
+  <data name="F11_Confirm" xml:space="preserve">
+    <value>Onaylamak için [F11] tuşuna basın</value>
+  </data>
+  <data name="TurnOFF" xml:space="preserve">
+    <value>Lütfen kontağı kapatın...</value>
+  </data>
+  <data name="UnrecECU" xml:space="preserve">
+    <value>ECU tanınamadı, lütfen kontağı kapatın...</value>
+  </data>
+  <data name="FABEEAT" xml:space="preserve">
+    <value>EEPROM'da Kendi Kendine Uyarlama Etkin</value>
+  </data>
+  <data name="FABEEATi" xml:space="preserve">
+    <value>EEPROM'da Rölanti Kendi Kendine Uyarlama Etkin</value>
+  </data>
+  <data name="FABEPAT" xml:space="preserve">
+    <value>EPROM'da Kendi Kendine Uyarlama Etkin</value>
+  </data>
+  <data name="FABEPATi" xml:space="preserve">
+    <value>EPROM'da Rölanti Kendi Kendine Uyarlama Etkin</value>
+  </data>
+  <data name="FLGSMA" xml:space="preserve">
+    <value>Lambda Kapalı Çevrimde</value>
+  </data>
+  <data name="Injector1" xml:space="preserve">
+    <value>Enjektör 1</value>
+  </data>
+  <data name="Injector2" xml:space="preserve">
+    <value>Enjektör 2</value>
+  </data>
+  <data name="Injector3" xml:space="preserve">
+    <value>Enjektör 3</value>
+  </data>
+  <data name="Injector4" xml:space="preserve">
+    <value>Enjektör 4</value>
+  </data>
+  <data name="INJ_AVA" xml:space="preserve">
+    <value>Enjeksiyon Zamanlama Açısı</value>
+  </data>
+  <data name="MP2_MP8t" xml:space="preserve">
+    <value>Manifold Mutlak Basıncı (TURBO)</value>
+  </data>
+  <data name="OverB" xml:space="preserve">
+    <value>Aşırı Turbo Basıncı</value>
+  </data>
+  <data name="T_VAE" xml:space="preserve">
+    <value>VAE Görev Döngüsü (Rölanti Kontrolü)</value>
+  </data>
+  <data name="StaSigPanOK" xml:space="preserve">
+    <value>Sinyal paneli TAMAM</value>
+  </data>
+  <data name="StaABSON" xml:space="preserve">
+    <value>ABS etkin</value>
+  </data>
+  <data name="StaVAESC" xml:space="preserve">
+    <value>VAE kendi kendini temizliyor</value>
+  </data>
+  <data name="VAE" xml:space="preserve">
+    <value>Rölanti Kontrol Valfi (VAE)</value>
+  </data>
+  <data name="ErrCam" xml:space="preserve">
+    <value>Eksantrik sensörü</value>
+  </data>
+  <data name="ErrDigimatic" xml:space="preserve">
+    <value>Digimatic sinyali</value>
+  </data>
+  <data name="ErrEPROM" xml:space="preserve">
+    <value>EPROM</value>
+  </data>
+  <data name="ErrKnock" xml:space="preserve">
+    <value>Vuruntu sensörü</value>
+  </data>
+  <data name="ErrNeutralGear" xml:space="preserve">
+    <value>Boş/vites sinyali</value>
+  </data>
+  <data name="ErrSMOT" xml:space="preserve">
+    <value>SMOT sensörü</value>
+  </data>
+  <data name="ErrSPS" xml:space="preserve">
+    <value>Sinyal Paneli Sırası</value>
+  </data>
+  <data name="ErrVAE" xml:space="preserve">
+    <value>VAE açık veya kapalı konumda sıkışmış</value>
+  </data>
+  <data name="StepReset" xml:space="preserve">
+    <value>Rölanti step motoru otomatik kalibrasyonunu sıfırla</value>
+  </data>
+  <data name="TrimReset" xml:space="preserve">
+    <value>Yakıt trim otomatik kalibrasyonunu sıfırla</value>
+  </data>
+  <data name="COMopenError" xml:space="preserve">
+    <value>{0} portu açılırken bir hata oluştu.</value>
+  </data>
+  <data name="ErrCnt" xml:space="preserve">
+    <value>Hata Sayacı</value>
+  </data>
+  <data name="ToggleStepAC" xml:space="preserve">
+    <value>Rölanti step motoru otomatik kalibrasyonunu aç/kapat</value>
+  </data>
+  <data name="ToggleTrimAC" xml:space="preserve">
+    <value>Yakıt trim otomatik kalibrasyonunu aç/kapat</value>
+  </data>
+  <data name="InProceed" xml:space="preserve">
+    <value>BEKLİYOR...</value>
+  </data>
+  <data name="Stepper" xml:space="preserve">
+    <value>Step motor (rölanti aktüatörü)</value>
+  </data>
+  <data name="StepSet" xml:space="preserve">
+    <value>Step motor düzeltmesini ayarla (ALFAFTR)</value>
+  </data>
+  <data name="TrimSet" xml:space="preserve">
+    <value>Trimer konumunu ayarla (TRIMRAM)</value>
+  </data>
+  <data name="Adjusting" xml:space="preserve">
+    <value>AYARLANIYOR: {0}...</value>
+  </data>
+</root>
